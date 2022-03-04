@@ -27,6 +27,7 @@ bcdedit /set hypervisorlaunchtype auto
 
 结论
 有的时候没有说明具体原因，百度到的都不是这些问题。看到有些情况是，BIOS的硬件虚拟没启用，这类的情况可以参考其他文章。我这里介绍我遇到的情况。
-————————————————
+
+
 版权声明：本文为CSDN博主「明天,今天,此时」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/LearnToPain/article/details/117336093
