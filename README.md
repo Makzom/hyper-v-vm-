@@ -7,9 +7,7 @@ hyper-v与vm共存
 
 1.关掉Hyper-V，在运行-> appwiz.cpl界面，启动关闭功能中，关掉
 2.在开始里面的管理员 power-shell中执行:
-
-bcdedit /set hypervisorlaunchtype off 1
-
+bcdedit /set hypervisorlaunchtype off
 3.重启计算机就可以用VMware了
 
 再用Hyper-V
@@ -21,7 +19,7 @@ bcdedit /set hypervisorlaunchtype off 1
 解决方法
 在开始里面的管理员 power-shell中执行:
 
-bcdedit /set hypervisorlaunchtype auto 1
+bcdedit /set hypervisorlaunchtype auto
 然后重启，问题就不大了
 
 结论
