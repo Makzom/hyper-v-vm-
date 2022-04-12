@@ -6,23 +6,29 @@ hyper-v与vm共存
   win10安装的Linux和Windows公用一个环境，很神奇，你们可以尝试用一下。后来我要用VMware（因为没找到什么方式可以连接linux内部应用端口），结果和Hyper冲突了，于是做了以下操作：
 
 1.关掉Hyper-V，在运行-> appwiz.cpl界面，启动关闭功能中，关掉
+
 2.在开始里面的管理员 power-shell中执行:
+
 bcdedit /set hypervisorlaunchtype off
+
 3.重启计算机就可以用VMware了
 
 再用Hyper-V
-要想再用Hyper-V就需要打开Hyper-V功能
-在运行-> appwiz.cpl界面，启动关闭功能中，Hyper-V全部勾选
+
+要想再用Hyper-V就需要打开Hyper-V功能在运行-> appwiz.cpl界面，启动关闭功能中，Hyper-V全部勾选
 
 再运行Hyper-V就出现Hyper-V虚拟机监控程序未运行问题。
 
 解决方法
+
 在开始里面的管理员 power-shell中执行:
 
 bcdedit /set hypervisorlaunchtype auto
+
 然后重启，问题就不大了
 
 结论
+
 有的时候没有说明具体原因，百度到的都不是这些问题。看到有些情况是，BIOS的硬件虚拟没启用，这类的情况可以参考其他文章。我这里介绍我遇到的情况。
 
 
